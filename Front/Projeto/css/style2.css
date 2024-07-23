@@ -1,0 +1,105 @@
+
+
+h2{
+  text-align: center  ;
+}
+
+#lista{
+  list-style-type: none; 
+  text-align: center  ;
+}
+
+#logo {
+    text-align: center;
+}
+
+#imagem {
+  text-align: end;
+}
+
+#VplacaM {
+  text-align: left;
+}
+
+#secaodois {
+    border: 7px ridge rgb(0, 0, 0);
+    text-align: center;
+    background: #6b6b6b;
+    width: 700px;
+    margin: auto;}
+
+.base .conteudo {
+  display: none;}
+.base.active .conteudo {
+  display: block;}
+.base .titulo {
+  cursor: pointer;}
+.base .titulo::after {
+  content: " (+)";}
+.base.active .titulo::after {
+  content: " (-)";}
+
+#conteudo{
+  color: rgb(0, 0, 0);
+}
+/*multiplas paginas*/
+
+body{
+  color: white;
+  background-color: #000000;
+}
+
+#um {
+  text-decoration: none;
+  position: relative;
+  border: none;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  color: #fff;
+  width: 15em;
+  height: 3em;
+  line-height: 2em;
+  text-align: center;
+  background: linear-gradient(90deg, #676969, #000000, #cecdcb);
+  background-size: 300%;
+  border-radius: 30px;
+  
+}
+
+#um:hover {
+  animation: ani 8s linear infinite;
+  border: none;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+#um:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #676969, #000000, #cecdcb);
+  background-size: 400%;
+  border-radius: 35px;
+  transition: 1s;
+}
+
+#um:hover::before {
+  filter: blur(20px);
+}
+
+#um:active {
+  background: linear-gradient(50deg, #676969, #000000, #cecdcb);
+}

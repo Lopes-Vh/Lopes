@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placa Mãe</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+
+    <div id="logo"><img src="img/Logo.png" alt=""></div>
+    <div style="display: flex; justify-content: space-between;">
+        <div id="VplacaM">
+            <iframe width="300vh" height="200vh"src="https://www.youtube.com/embed/E4l_6ceUNkY?si=cqnaCUf3Gx80dKnW" titulo="Vídeo do YouTube" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen style="max-width: 100%;"></iframe>
+        </div>
+        <div id="imagem">
+            <img id="X670E" src="img/cooler.png" alt="Placa Mãe" style="height: 25vh; width: 20vw; object-fit: contain; max-width: 100%;">
+        </div>
+    </div>
+    <div class="especificacoes">
+        <h2>Especificações</h2>
+        <hr>
+        <ul id="lista">
+            <li class="base">
+                <div class="titulo">Modelo</div>
+                <div class="conteudo">GA-240B preto / GA-240A branco / GA-360B preto / GA-240A branco</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Materiais do Radiador</div>
+                <div class="conteudo">Alumínio e Plástico</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Dimensões do Radiador (360 mm)</div>
+                <div class="conteudo">(L) 397.5 x (A) 123.5 x 27 mm</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Dimensões do Radiador (240 mm)</div>
+                <div class="conteudo">(L) 273 x (A) 123.5 x 27 mm</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Bomba</div>
+                <div class="conteudo">Altura: 61.8 mm, Diâmetro: 74 mm</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Dimensões do Ventilador</div>
+                <div class="conteudo">(L) 120 x (L) 120 x (A) 25 mm</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Velocidade do Ventilador</div>
+                <div class="conteudo">800±200(30% DEVER) ~ 1900 RPM±10%</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Fluxo de Ar do Ventilador</div>
+                <div class="conteudo">69.17 CFM</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Pressão de Ar do Ventilador</div>
+                <div class="conteudo">2.6 mmH2O</div>
+            </li>
+            <li class="base">
+                <div class="titulo">MTTF do Ventilador</div>
+                <div class="conteudo">40,000 Horas</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Nível de Ruído do Ventilador</div>
+                <div class="conteudo">32 dBA</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Conector de Alimentação do Ventilador</div>
+                <div class="conteudo">4-PIN</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Tensão Nominal do Ventilador</div>
+                <div class="conteudo">12V CC</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Dimensões da Bomba</div>
+                <div class="conteudo">(L) 87.1 x (L) 74 x (A) 62 mm</div>
+            </li>
+            <li class="base">
+                <div class="titulo">MTTF da Bomba</div>
+                <div class="conteudo">70,000 Horas</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Nível de Ruído da Bomba</div>
+                <div class="conteudo">Menor que 20 dBA</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Tensão Nominal da Bomba</div>
+                <div class="conteudo">12V CC</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Soquetes de CPU Compatíveis</div>
+                <div class="conteudo">Intel: LGA 115X, LGA 1200, LGA 1700 <br> AMD: AM4, AM5</div>
+            </li>
+        </ul>
+    </div>
+    
+    
+    <hr>
+    <a href="index.html"><button id="um">Voltar para a página principal</button></a>
+
+    <script>
+        const bases = document.querySelectorAll('.base');
+        bases.forEach(base => {
+            base.addEventListener('click', () => {
+                base.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

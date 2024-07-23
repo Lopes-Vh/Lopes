@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placa Mãe</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+
+    <div id="logo"><img src="img/Logo.png" alt=""></div>
+    <div style="display: flex; justify-content: space-between;">
+        <div id="VplacaM">
+            <iframe width="300vh" height="200vh"src="https://www.youtube.com/embed/zMDC42_q1Q4?si=Hcku5vizChqo7MR6" titulo="Vídeo do YouTube" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen style="max-width: 100%;"></iframe>
+        </div>
+        <div id="imagem">
+            <img id="X670E" src="img/SSD.png" alt="Placa Mãe" style="height: 25vh; width: 20vw; object-fit: contain; max-width: 100%;">
+        </div>
+    </div>
+    <div class="especificacoes">
+        <h2>Especificações</h2>
+        <hr>
+        <ul id="lista">
+            <li class="base">
+                <div class="titulo">Formato de Armazenamento</div>
+                <div class="conteudo">M.2 2280</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Cor do Dissipador de Calor</div>
+                <div class="conteudo">PRETO</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Dissipador de Calor</div>
+                <div class="conteudo">Alumínio</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Tipo de Memória</div>
+                <div class="conteudo">PCIe Gen 4.0 x4</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Temperatura de Armazenamento</div>
+                <div class="conteudo">-40°C a +85°C</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Resistência</div>
+                <div class="conteudo">700TBW</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Máxima Leitura Sequencial do SSD (CDM)</div>
+                <div class="conteudo">Até 7,100MB/s</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Máxima Gravação Sequencial do SSD (CDM)</div>
+                <div class="conteudo">Até 5,800MB/s</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Umidade de Armazenamento</div>
+                <div class="conteudo">93% RH (40°C)</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Conteúdo da Embalagem do SSD</div>
+                <div class="conteudo">SSD M.2 da Série MP600 PRO XT com dissipador de calor, Guia de Início Rápido</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Máxima Leitura Aleatória QD32 IOMeter</div>
+                <div class="conteudo">Até 900K IOPS</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Máxima Gravação Aleatória QD32 IOMeter</div>
+                <div class="conteudo">Até 1.2M IOPS</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Suporte Inteligente do SSD</div>
+                <div class="conteudo">Sim</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Tecnologia NAND</div>
+                <div class="conteudo">3D TLC</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Temperatura de Operação do SSD</div>
+                <div class="conteudo">0°C a +70°C</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Impacto do SSD</div>
+                <div class="conteudo">1,500 G</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Forma de Armazenamento</div>
+                <div class="conteudo">M.2 2280</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Aplicação</div>
+                <div class="conteudo">Consumidor, Cliente</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Compatibilidade do SSD</div>
+                <div class="conteudo">Conector de Interface M.2 2280, Windows 10, Mac OS X</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Voltagem</div>
+                <div class="conteudo">3.3V, +/- 5%</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Vibração</div>
+                <div class="conteudo">20 Hz~80 Hz/1.52 mm, 80 Hz~2000 Hz/20G</div>
+            </li>
+    
+    
+    <hr>
+    <a href="index.html"><button id="um">Voltar para a página principal</button></a>
+
+    <script>
+        const bases = document.querySelectorAll('.base');
+        bases.forEach(base => {
+            base.addEventListener('click', () => {
+                base.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
