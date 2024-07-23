@@ -6,7 +6,7 @@ h2 {
     font-size: 24px;
 
     font-family: 'Tahoma';
-    
+
 }
 
 
@@ -21,7 +21,8 @@ div {
     width: 930px;
     margin:0 auto;
     border-top: 20px solid #d5d5d5;
-    text-align: center;
+    text-align: center; 
+    
 }
 
 p {
