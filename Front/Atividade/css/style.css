@@ -4,8 +4,11 @@ img {
 
 h2 {
     font-size: 24px;
+
     font-family: 'Tahoma';
+
 }
+
 
 h3 {
     font-size: 20px;
@@ -18,7 +21,8 @@ div {
     width: 930px;
     margin:0 auto;
     border-top: 20px solid #d5d5d5;
-    text-align: center;
+    text-align: center; 
+    
 }
 
 p {
