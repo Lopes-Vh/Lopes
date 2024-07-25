@@ -1,7 +1,6 @@
 //import Ent from "readline-sync";
 
 //atv1
-/
 function toUpperCase(str) {
     return str.toUpperCase();
   }
