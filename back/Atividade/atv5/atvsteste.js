@@ -1,12 +1,13 @@
 import rl, { questionInt } from 'readline-sync';
 
-// Função para validar senha
+
+
 function validarSenha(senha) {
   const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
   return regex.test(senha);
 }
 
-// Função para validar CPF
+
 function validarCPF(cpf) {
   let soma = 0;
   let resto;
@@ -27,7 +28,7 @@ function validarCPF(cpf) {
   return true;
 }
 
-// Função para calcular o retorno de um investimento
+
 function calcularRetornoInvestimento(C, i, t) {
   let M = C * Math.pow((1 + i/100), t);
   return M.toFixed(2);
