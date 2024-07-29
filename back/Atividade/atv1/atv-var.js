@@ -15,6 +15,7 @@ console.log("Frase maiuscula ", maius)
 console.log("Frase Minuscula ", minus) 
 
 
+
 let numero = Number(9);
 
 if (typeof numero === 'number') {
