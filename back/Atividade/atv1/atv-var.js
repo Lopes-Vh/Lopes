@@ -16,12 +16,15 @@ console.log("Frase Minuscula ", minus)
 
 
 
+
 let numero = Number(9);
 
 if (typeof numero === 'number') {
     console.log("A variável numero é do tipo Number");
 } else {
+
     console.log("A variável numero não é do tipo Number");
+    
 }
 
 
