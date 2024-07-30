@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#cont-ft{
+    text-align: center  ;
+    margin-top: 7%;
+    margin-bottom: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: auto;
+    border-style: double;
+    
+   
+}
+
+
+
+#turma{
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    text-align: center;}
