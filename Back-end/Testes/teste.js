@@ -10,7 +10,7 @@ switch(menu){
 
     case 3:
         let raio= questionFloat("Digite o raio do círculo: ");
-        console.log(`A área do círculo é: ${3.1415*(raio**2)}`);    
+        console.log(`A área do círculo é: ${3.14*(raio**2)}`);    
     
     case 4:
         break
