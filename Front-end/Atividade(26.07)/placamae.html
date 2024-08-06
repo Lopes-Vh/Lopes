@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placa Mãe</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+
+    <div id="logo"><img src="img/Logo.png" alt=""></div>
+    <div style="display: flex; justify-content: space-between;">
+        <div id="VplacaM">
+            <iframe width="300vh" height="200vh"src="https://www.youtube.com/embed/eqtI8gbZx7Y?si=EH3XNH66PgT8Q8nh" titulo="Vídeo do YouTube" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen style="max-width: 100%;"></iframe>
+        </div>
+        <div id="imagem">
+            <img id="X670E" src="img/X670E.jpeg" alt="Placa Mãe" style="height: 25vh; width: 20vw; object-fit: contain; max-width: 100%;">
+        </div>
+    </div>
+    <div class="especificacoes">
+        <h2>Especificações</h2>
+        <hr>
+        <ul id="lista" >
+        
+            <li class="base">
+                <div class="titulo">CPU</div>
+                <div class="conteudo">AM5 Socket for AMD Ryzen Desktop Processors</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Chipset</div>
+                <div class="conteudo">AMD X670</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Memória</div>
+                <div class="conteudo">4 x DIMM, Max. 192GB, DDR5 8000+(OC)/7800(OC)/7600(OC)/7200(OC)/7000(OC)/6800(OC)</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Gráficos</div>
+                <div class="conteudo">1 x HDMI® port*, 2 xUSB4® ports support USB Type-C® display outputs**</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Slots de Expansão</div>
+                <div class="conteudo">AMD Ryzen™ 7000 Series Desktop Processors* 2 x PCIe 5.0 x16 slots</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Armazenamento</div>
+                <div class="conteudo">Total supports 5 x M.2 slots and 6 x SATA 6Gb/s ports*</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Ethernet</div>
+                <div class="conteudo">1 x Intel® 2.5Gb Ethernet</div>
+            </li>
+            <li class="base">
+                <div class="titulo">USB</div>
+                <div class="conteudo">
+                    <p>Rear USB (Total 12 ports) 2 x USB4® portas</p>
+                    <p>2 x USB Type-C, 1 x USB 3.2 Gen 2x2 port(s)</p>
+                    <p>(1 x USB Type-C®)</p>
+                    <p>9 x USB 3.2 Gen 2 port(s)</p>
+                    <p>(8 x Type-A + 1 x USB Type-C®)</p>
+                </div>
+            </li>
+            <li class="base">
+                <div class="titulo">Áudio</div>
+                <div class="conteudo">ROG SupremeFX 7.1 Surround Sound High Definition Audio</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Audio Features</div>
+                <div class="conteudo">SupremeFX Shielding Technology, Premium audio capacitors, Audio cover</div>
+            </li>
+            <li class="base">
+                <div class="titulo">Portas I/O do Painel Traseiro</div>
+                <div class="conteudo">
+                    <p>2 x USB4® ports USB4® controller</p>
+                    <p>(2 x USB Type-C®)</p>
+                    <p>1 x USB 3.2 Gen 2x2 port (1 x USB Type-C®)</p>
+                    <p>9 x USB 3.2 Gen 2 ports(8 x Type-A + 1 x Type-C®)</p>
+                    <p>1 x HDMI® port, 1 x Wi-Fi Module, 1 x 2.5Gb Ethernet</p>
+                </div>
+            </li>
+            <li class="base">
+                <div class="titulo">Conectores I/O Internos</div>
+                <div class="conteudo">
+                    <p>Fan and Cooling related 1 x 4-pin CPU Fan header1</p>
+                    <p>x 4-pin CPU OPT Fan header</p>
+                    <p>1 x 4-pin AIO Pump header</p>
+                    <p>4 x 4-pin Chassis Fan headers</p>
+                    <p>1 x W_PUMP+ header</p>
+                    <p>1 x 2-pin Water In header</p>    
+                    <p>1 x 2-pin Water Out header</p>
+                    <p>1 x 3-pin Water Flow header</p>
+                    <p>Power related 1 x 24-pin Main Power connector</p>
+                    <p>2 x 8-pin +12V Power connector</p>
+                    <p>1 x 6-pinPCIe Power connector</p>
+                    <p>Storage related 4 x M.2 slots (Key M)</p>
+                    <p>6 x SATA 6Gb/s ports, USB 1 x USB 3.2 Gen 2x2 connector (supports USB Type-C®)</p>
+                    <p>2 x USB 3.2 Gen 1 headers support additional 4 USB 3.2 Gen 1 ports</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <a href="index.html"><button id="um">Voltar para a página principal</button></a>
+
+    <script>
+        const bases = document.querySelectorAll('.base');
+        bases.forEach(base => {
+            base.addEventListener('click', () => {
+                base.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
+

@@ -1,12 +1,13 @@
 body {
-  background-image: url(backgroud.jpg);
-  background-repeat: no-repeat;
+  background: rgb(120,45,253);
+  background: linear-gradient(0deg, rgba(120,45,253,1) 0%, rgba(63,94,251,0.93) 100%);
   background-size: cover;
   margin: 0%;
   display: flex;
   flex-direction: column;
   min-height: 100vh; 
   overflow-x: hidden;
+
 }
 
 #content-wrapper {
@@ -49,6 +50,11 @@ h1 {
   margin-top: 10vh;
   max-width: 100%; 
   padding: 0 20px;
+}
+
+#titulo{
+  background: #6b6b6b;
+  border: 0;
 }
 
 #um {
@@ -253,7 +259,9 @@ footer {
 }
 
 header{
-  background-color: #323F61;
+  background: rgb(63,94,251);
+  background: linear-gradient(0deg, rgba(63,94,251,0.9374124649859944) 0%, rgba(45,253,134,1) 100%);
+  border-bottom: 7px ridge rgb(0, 0, 0);
 }
 
 .nav-container{
