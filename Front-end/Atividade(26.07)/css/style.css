@@ -1,6 +1,6 @@
 body {
   background: rgb(120,45,253);
-  background: linear-gradient(0deg, rgba(120,45,253,1) 0%, rgba(63,94,251,0.93) 100%);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(2,2,106,1) 100%);
   background-size: cover;
   margin: 0%;
   display: flex;
@@ -34,7 +34,7 @@ h1 {
 #infos {
   border: 7px ridge rgb(0, 0, 0);
   text-align: center;
-  background: #6b6b6b;
+  background: #ff0505;
   width: 80vh;
   margin: auto;
   margin-top: 3vh;
@@ -43,7 +43,7 @@ h1 {
 #secaodois {
   border: 7px ridge rgb(0, 0, 0);
   text-align: center;
-  background: #6b6b6b;
+  background: #e60000;
   width: 700px;
   margin: auto;
   margin-bottom: 15vh;
@@ -51,9 +51,9 @@ h1 {
   max-width: 100%; 
   padding: 0 20px;
 }
-
+/* titulo se refere a seçãodois*/   
 #titulo{
-  background: #6b6b6b;
+  background: #e60000;
   border: 0;
 }
 
@@ -69,7 +69,7 @@ h1 {
   width: 15em;
   height: 3em;
   line-height: 2em;
-  background: linear-gradient(90deg, #676969, #000000, #cecdcb);
+  background: linear-gradient(90deg, #000000, #17ff64, #6eff0e, #32e7e7);
   background-size: 300%;
   border-radius: 30px;
   margin-bottom: 2vh;
@@ -98,7 +98,8 @@ h1 {
   right: -5px;
   bottom: -5px;
   z-index: -1;
-  background: linear-gradient(90deg, #676969, #000000, #cecdcb);
+    background: linear-gradient(90deg, #32e7e7, #17ff64, #6eff0e, #32e7e7);
+
   background-size: 400%;
   border-radius: 35px;
   transition: 1s;
@@ -109,7 +110,7 @@ h1 {
 }
 
 #um:active {
-  background: linear-gradient(50deg, #676969, #000000, #cecdcb);
+  background: linear-gradient(50deg, #32e7e7, #17ff64, #32e7e7);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
@@ -260,7 +261,7 @@ footer {
 
 header{
   background: rgb(63,94,251);
-  background: linear-gradient(0deg, rgba(63,94,251,0.9374124649859944) 0%, rgba(45,253,134,1) 100%);
+  background: linear-gradient(0deg, rgba(2,2,106,1) 0%, rgb(255, 255, 255) 100%);
   border-bottom: 7px ridge rgb(0, 0, 0);
 }
 
