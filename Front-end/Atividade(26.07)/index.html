@@ -17,7 +17,7 @@
             <div class="header-list">
                 <a href="#infos">Sobre</a>
                 <a href="#secaodois">Serviços</a>
-                <a href="#footer_content">Contato</a>
+                <a href="#top">Contato</a>
             </div>
             <div class="header-toggle" onclick="trocar()">
                 <div class="bar"></div>
@@ -46,38 +46,49 @@
             <strong>Projetos</strong>        
         </header>  
         <ul>
-            <li style="list-style: none;"><a href="placamae.html"><button id="um">Pc Componentes</button></a></li>
+            <li style="list-style: none;"><a href="https://lopes-vh.github.io/Projeto/"><button id="um">Pc Componentes</button></a></li>
             <li style="list-style: none;"><a href="placadevideo.html"><button id="um">A era Artificial</button></a></li>
+            <li style="list-style: none;"><a href="https://lopes-vh.github.io/AtvFront-end/"><button id="um">Flex-box</button></a></li>
             <li style="list-style: none;"><a href="processador.html"><button id="um">Componetes Lp</button></a></li>
         </ul>        
     </section>
     <footer>
-        <div id="footer_content">
-            <nav id="footer_nav">
-                <div id="footer_contacts">
-                    <!--<h1><img src="img/Logo.png" width="200vw" height="200vh"></h1>-->
-                    <p>Lopes Projetos, Seu projeto do seu jeito !!!</p>
-                </div>
-                <div id="footer_social_media">
-                    <a href="#" class="footer-link" id="instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="#" class="footer-link" id="facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="footer-link" id="whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                </div>
-            </nav>
-            
-            </div>
+        <div class="top">
+          <div class="pages">
+            <ul>
+              <h3>Lopes</h3>
+              <li><a href="#">Home</a></li>
+            </ul>
+            <ul>
+              <h3>Sobre</h3>
+
+              <li><a href="#secaodois">Projetos</a></li>
+            </ul>
+          </div>
+          <div class="newsletter">
+            <h3>Matenha-se Informado</h3>
+            <form action="index.html">
+              <input
+                type="email"
+                name="newsletter_email"
+                id="newsletter_email"
+                placeholder="Email"
+                required    
+              />
+              <input id="button" type="submit" value="Enviar" />
+            </form>
+          </div>
         </div>
-    </footer>
+        <div class="social">
+              <a href="https://github.com/Lopes-Vh"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/joao.vitor_.lopes?igsh=MXZlMmVnZXFtdXgx"><i class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
     <script>
         function trocar() {
             document.querySelector('.header-list').classList.toggle('active');
             document.querySelector('.header-toggle').classList.toggle('active');
+            document.querySelector('proj').classList.toggle('active')
         }
     </script>
 </body>
