@@ -12,6 +12,6 @@ app.get('/', (req, res) => {
     res.json({mensagem: mensagemSelecionada});
 });
 
-app.listen(8080, () => {
-    console.log('Servidor node iniciado em: ' + data);
-});
+//app.listen(8080, () => {
+//    console.log('Servidor node iniciado em: ' + data);
+//});
