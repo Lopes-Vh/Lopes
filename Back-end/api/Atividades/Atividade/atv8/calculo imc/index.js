@@ -5,19 +5,16 @@ const calculadoraIMC = require('./calculadoraIMC');
 app.get("/", (req, res) => {
     let peso = req.query.peso;
     let altura = req.query.altura;
-    if(calculadoraIMC.validaparametro(req.query.peso) &&
-    calculadoraIMC.validaparametro(req.query.altura))
-    {
-    let imc = calculadoraIMC.efetuarCalculoIMC(peso, altura);
+    if (calculadoraIMC.validaparametro(peso) && calculadoraIMC.validaparametro(altura)) {
+        let imc = calculadoraIMC.efetuarCalculoIMC(peso, altura);
+        let status = calculadoraIMC.retornaStatusIMC(imc);
 
-    let json = {imc: imc, status: status};
+        let json = { imc: imc, status: status };
 
-    res.json({imc: imc});
+        res.json(json);
+    } else {
+        res.status(400).json({ 'erro': 'Peso ou altura inválido' });
     }
-    else
-    {
-    res.status(400) .json({'erro': 'Peso ou altura invalido'})
-}
 });
 
 app.listen(8080, () => {
