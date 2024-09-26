@@ -7,22 +7,22 @@ app.get('/aviao', (req, res) => {
     res.json(colecaoFl);
 });
 
-app.get("/aviao/:idUf", (req, res) => {
-    const idUF = parseInt(req.params.idUf);
+app.get("/aviao/:idFl", (req, res) => {
+    const idFL = parseInt(req.params.idFl);
     let mensagemErro = '';
-    let uf;
+    let fl;
 
-    if (!isNaN(idUF)) {
-        uf = colecaoFl.find(u => u.id === idUF);
-        if (!uf) {
-            mensagemErro = 'UF não encontrada';
+    if (!isNaN(idFL)) {
+        fl = colecaoFl.find(f => f.id === idFL);
+        if (!fl) {
+            mensagemErro = 'FL não encontrada';
         }
     } else {
         mensagemErro = 'Requisição inválida';
     }
 
-    if (uf) {
-        res.json(uf);
+    if (fl) {
+        res.json(fl);
     } else {
         res.status(404).json({ "erro": mensagemErro });
     }
