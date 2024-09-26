@@ -1,19 +1,19 @@
 const express = require('express');
-const colecaoUf = require('./dados/dados.js');
+const { colecaoFl } = require('./dados/dados.js');
 
 const app = express();
 
-app.get('/ufs', (req, res) => {
-    res.json(colecaoUf);
+app.get('/aviao', (req, res) => {
+    res.json(colecaoFl);
 });
 
-app.get("/ufs/:idUf", (req, res) => {
+app.get("/aviao/:idUf", (req, res) => {
     const idUF = parseInt(req.params.idUf);
     let mensagemErro = '';
     let uf;
 
     if (!isNaN(idUF)) {
-        uf = colecaoUf.colecaoUffind(u => u.id === idUF);
+        uf = colecaoFl.find(u => u.id === idUF);
         if (!uf) {
             mensagemErro = 'UF não encontrada';
         }
@@ -27,9 +27,6 @@ app.get("/ufs/:idUf", (req, res) => {
         res.status(404).json({ "erro": mensagemErro });
     }
 });
-
-
-
 
 app.listen(8080, () => {
     console.log('Servidor iniciado na porta 8080');
